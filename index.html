@@ -5,3 +5,21 @@
 	Hello World
     </body>
 </html>
+
+
+<script type=''>
+
+	windown.onload = function() {
+		var now = new Date().getTime();
+		
+		setTimeout(function() {
+			if(new Date().getTime() - now < 1000) {
+				location.href = 'market://detail?id=com.amorepacific.customme';
+			}
+		}, 500);
+			   
+		setTimeout(function() {
+			location.href = 'customme://app';
+		}, 100);
+	};
+</script>
